@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-21T00:38:06.135Z</updated>
+  <updated>2021-01-04T09:26:37.724Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git问题记录</title>
+    <link href="http://example.com/2021/01/04/git%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    <id>http://example.com/2021/01/04/git%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</id>
+    <published>2021-01-04T09:22:01.000Z</published>
+    <updated>2021-01-04T09:26:37.724Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录使用git中碰到的问题<br>commit后发现信息有问题，该怎样修改呢？<br>执行 git log 查看最近的提交记录<br>执行 git rebase -i HEAD~3 修改最近3次提交信息<br>将要修改的日志前的pick改为edit 输入:wq保存<br>执行 git commit –amend 修改日志，然后:wq保存<br>修改完成后执行 git rebase –continue<br>最后强制推送到远程仓库 git push origin <you_branch_name> -f</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;记录使用git中碰到的问题&lt;br&gt;commit后发现信息有问题，该怎样修改呢？&lt;br&gt;执行 git log 查看最近的提交记录&lt;br&gt;执行 git rebase -i HEAD~3 修改最近3次提交信息&lt;br&gt;将要修改的日志前的pick改为edit 输入:wq保存&lt;br&gt;执</summary>
+      
+    
+    
+    
+    
+    <category term="git" scheme="http://example.com/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
